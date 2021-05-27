@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: sans-serif;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.logo{
+	width: 30vw;
+	height: 15vh;
+	margin-bottom: 40px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	font-size: 18px;
+	min-width: 400px;
+}
+
+.form>.remark{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form>.cities{
+
+}
+
+.form>.cities>.title,.form>.birthday>.title{
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.form>.cities>select{
+	height: 40px;
+	border-radius: 8px;
+	font-size: 15px;
+	margin-top: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+	border:1px solid gray;
+}
+
+
+.form>.birthday>.inputs{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.form>.birthday>.inputs>input{
+	height: 40px;
+	border-radius: 8px;
+	border:1px solid gray;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	width: 25%;
+}
+
+.form>.sousRemark{
+	text-align: center;
+}
+
+.form>.sousRemark>.title{
+	
+}
+.form>.sousRemark>.checkedButton{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.form>.sousRemark>.checkedButton>input{
+	margin-right: 10px;
+	margin-top: 6px;
+
+}
+.form>.sousRemark>.checkedButton>label{
+	width: 80%;
+	text-align: left;
+}
+
+
+.form>.footer{
+	text-align: center;
+}
+
+.form>.footer>span{
+	color: #12bd05 !important;
+}
+
+.form>.submitBtn{
+	color: white;
+	background: black;
+	border: 1px solid black;
+	width: 80%;
+	margin-top: 10px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.error{
+	color: red;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 10px;
+	display: none;
+}

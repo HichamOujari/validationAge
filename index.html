@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Allo Fiverr</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<img class="logo" src="https://custom.ageverify.co/allovapor/AVlogo.png">
+
+	<form class="form" id="IdForm">
+		<p class="remark">You must be of legal age in your province / territory to view contents and purchase vaping products on ALLO.ca.</p>
+		<div class="cities">
+			<p class="title">Select your province or territory of residence:</p>
+
+			<p class="error" id="IdSelectError">Select a city</p>
+			<select required id="Selectedcity">
+				<option value="-1">Choose One</option>
+			</select>
+		</div>
+		<div class="birthday">
+			<p class="title">Enter your date of birth:</p>
+			<p id="IdBirthError" class="error">Enter a valide date</p>
+			<div class="inputs">
+				<input required maxlength="2" id="IdDD" type="number" name="day" placeholder="DD">
+				<input required maxlength="2" id="IdMM" type="number" name="month" placeholder="MM">
+				<input required maxlength="4" minlength="4" id="IdYY" type="number" name="year" placeholder="YYYY">
+			</div>
+		</div>
+		<div class="sousRemark">
+			<p class="title">By submitting my date of birth I certify that it is accurate and agree to be age verified.</p>
+			<div class="checkedButton">
+				<input id="IDChekcbtn" type="checkbox" name="checkButton">
+				<label for="IDChekcbtn">Remember me on this device for 30 days. 
+				I confirm that this is not a shared device.</label>
+			</div>
+		</div>
+		<p class="footer">Allo.ca is now <span>available for online purchase</span> in British Columbia, Alberta, Ontario, and New Brunswick</p>
+		<input type="submit" name="submit" value="VERIFY" class="submitBtn">
+	</form>
+
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
